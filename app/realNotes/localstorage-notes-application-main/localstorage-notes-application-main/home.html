@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Notes-Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/important.css">
+
+</head>
+
+<body onload="loaded()">
+    <div class="main">
+        <header class="resize">
+            <div class="opt"><a href="main.html"><img src="img/back.svg" alt="" class="presss"
+                        onclick="setAlignment('right')"></a></div>
+            <img src="img/blank.svg" alt="">
+            <p>Notes</p>
+            <img src="img/grid.svg" class="listGrid presss" onclick="listGrid()">
+        </header>
+        <section>
+            <div class="notes" id="notesContainer">
+                <input type="search" oninput="search(this.value)" id="searchBox">
+            </div>
+            <div class="notFound">
+                <img src="img/empty.svg" alt="Empty Notes" class="empty">
+                <div class="text">
+                    <h1 class="notFoundText">No Notes Found</h1>
+                    <p class="instruction">Click The Plus Button to Create New Notes</p>
+                    <p class="about" style="padding-top: 10px;">
+                        <span class="bgLink presss">Alpha Notes</span>
+                        By
+                        <a href="https://www.facebook.com/Abinash.Dark.Rose" target="_blank"><span
+                                class="bgLink presss">Nikhil</span></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="new presss" onclick="newNote()">
+            <img src="img/plus.svg" alt="">
+        </div>
+    </div>
+    <script src="js/important.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

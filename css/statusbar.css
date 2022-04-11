@@ -1,0 +1,25 @@
+.statusbar{
+    height: 30px;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    background: #ffffff22;
+}
+
+.statusbar img{
+    height: 28px;
+    margin-left: 10px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.statusbar a{
+    text-decoration: none;
+    margin: 10px ;
+    margin-bottom: 15px ;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 10px ;
+    justify-content: center;
+}
+

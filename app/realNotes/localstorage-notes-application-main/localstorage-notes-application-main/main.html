@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Notes-Advance Notes App</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/important.css">
+
+</head>
+<body onload="loaded()">
+<div class="main">
+    <h1 class="center heading">Welcome to Alpha Notes</h1>
+    <img src="img/main.svg" alt="Welcome" class="logo">
+    <button class="start press" onclick="start()">Start Using Notes</button>
+    <p class="txt">By<a href="#" target="_blank" class="color"> Nikhil Mahato</a></span> | <a href="https://www.github.com/nikhil1423" target="_blank" class="color"> Alpha Notes Software</a></span></p>
+</div>
+<script>
+localStorage.started="" ;
+if(localStorage.started)
+    window.location.href="home.html";
+function start(){
+    localStorage.started = "true";
+    $d.openPage("home.html","right");
+}
+</script>
+<script src="js/important.js"></script>
+</body>
+</html>

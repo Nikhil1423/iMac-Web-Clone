@@ -1,0 +1,108 @@
+body{
+    height: auto;
+    min-height: 100vh;
+    user-select: none;
+    color: var(--text);
+}
+#wallpaper{
+    position: fixed;
+    z-index: -10000;
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    height: 150vw;
+    width: 300vw;
+    top: 50%;
+    left: 50%;
+}
+.top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 150px;
+    transition: 0.2s linear padding-top;
+}
+h1{
+    font-size: 3.5em;
+}
+.top p{
+    font-size: 0.7em;
+    opacity: 0.7;
+}
+.searchDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#query{
+    width: min(87%,500px);
+    margin-top: 70px;
+    font-size: 1em;
+    padding: 18px 10px 18px 18px;
+    outline : none;
+    border: 1.5px solid var(--text);
+    color: var(--text);
+    transition: 0.3s linear border-color;
+    border-radius: 3px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+#query::placeholder{
+    color: var(--text);
+}
+#query::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+    height: 1.5em;
+    height: 13px;
+    width: 13px;
+    border-radius:10px;
+    background: url("../icons/cross.svg");
+}
+
+#query:focus{
+    border-color: var(--color);
+}
+.searchDiv .suggestions{
+    width: min(88%,500px);
+    height: auto;
+    background-color: #00000000;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 136px;
+    box-shadow: 0px 0px 10px 10px #00000008;
+    z-index: 100;
+}
+.searchDiv .suggestions p{
+    padding: 15px 15px 15px 20px;
+}
+.searchDiv .suggestions p:active{
+    background-color: #ddd;
+}
+.shortcuts{
+    width: min(88%,500px);
+    margin: auto;
+    margin-top: 70px;
+}
+.shortcuts p{
+    padding:11px 21px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #00000008;
+    font-size: 0.85em;
+    transition: 0.1s linear transform;
+    background-color: #eeeeee88;
+    backdrop-filter: blur(5px);
+    color: black;
+}
+.shortcuts p:active{
+    transform: scale(0.9);
+}
+
+#newShortcuts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+}

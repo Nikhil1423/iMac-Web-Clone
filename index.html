@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="This is a iMac-Web and this is the clone of MacintoshOS or macOS."
+    />
+    <meta name="keywords" 
+    content="iMac, Apple, MacBook, Steve Jobs, Google, San Fransisco, California, macontish,">
+    <meta name="author" content="Nikhil Mahato">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+    <title>iMac Web - by Nikhil Mahato</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/statusbar.css" />
+    <link rel="stylesheet" href="css/bottom.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/mouse.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/openLink.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/notes.js"></script>
+    <script src="js/app.js"></script>
+    <script src="mouseMove.js"></script>
+    <link rel="icon" href="images/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- <body onmousemove="mouseMoved(event)"> -->
+
+  <body>
+    <div class="statusbar">
+      <a href="https://apple.com/"><img src="images/apple.png" alt="Apple" /></a>
+      <!-- <p>
+            <li class="status">Finder</li>
+            <li class="status">File</li>
+            <li class="status">Edit</li>
+            <li class="status">View</li>
+        </p> -->
+      <!-- <ul>
+            <li class="status">Finder</li>
+            <li class="status">File</li>
+            <li class="status">Edit</li>
+            <li class="status">View</li>
+        </ul>  -->
+    </div>
+
+    <div class="main">
+      <div class="left">
+        <div class="time">
+          <h1>9:44</h1>
+          <p>Tuesday, November 19</p>
+        </div>
+        <!-- <div class="all">
+          <div class="heading">
+            <img src="icon/weather.png" alt="N" />
+            <p class="headingText">Current Weather</p>
+          </div>
+        </div> -->
+        <!-- <div class="all">
+          <div class="heading">
+            <img src="icon/cloclFull.png" alt="C" />
+            <p class="headingText">Timer</p>
+          </div>
+        </div> -->
+        <div class="all note">
+          <div class="heading">
+            <img src="icon/notes.png" alt="N" />
+            <p class="headingText">QUICK NOTES</p>
+          </div>
+          <textarea
+            placeholder="Take a Note Here..."
+            oninput="editNote(this.value)"
+          ></textarea>  
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+    <div class="bottom">
+      <div class="container">
+        <a href=""
+          ><div
+            class="icon"
+            style="background-image: url('icon/safari.png')"
+            onclick='openApp("https://nikhil1423.github.io/Neox-Searcgh-Engine-/","Safari","500px","1000px")'
+          ></div
+        ></a>
+        <!-- <div class="icon" style="background-image:url('icon/safari.png');" onclick='openApp("icon/index.html","2021","700px","1000px")'></div> -->
+        <div
+          class="icon calender"
+          style="background: white"
+          onclick='openApp("app/calender/index.html","Calendar","500px","900px")'
+        >
+          <p>Sunday</p>
+          <h1>21</h1>
+        </div>
+        <div
+          class="icon"
+          style="background-image: url('icon/notes.png')"
+          onclick='openApp("app/Notes/index.html","Notes","500px","900px")'
+        ></div>
+        <div
+          class="icon"
+          style="background-image: url('icon/notes2.png')"
+          onclick='openApp("https://nikhil1423.github.io/NeoNotes/","Notes","500px","400px")'
+        ></div>
+        <div
+          class="icon"
+          style="background-image: url('icon/weather.png')"
+          onclick='openApp("https://nikhil1423.github.io/NeoWeather-Web/","Weather","500px","400px")'
+        ></div>
+        <div
+          class="icon"
+          style="background-image: url('icon/settings.png')"
+          onclick='openApp("app/settings.html","Settings","600px","900px")'
+        ></div>
+        <div
+          class="icon"
+          style="background-image: url('icon/files.png')"
+          onclick='openApp("https://nikhil1423.github.io/Portfolio/","Notes","500px","400px")'
+        ></div>
+        <a href="https://open.spotify.com/" target="_blank">
+          <div class="icon" style="background-image: url('icon/m.png')"></div>
+        </a>
+        <a href="https://www.google.com/photos/about/" target="_blank">
+          <div
+            class="icon"
+            style="background-image: url('icon/gallery.png')"
+          ></div>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <div class="icon" style="background-image: url('icon/tw.png')"></div>
+        </a>
+        <a href="app/sketch/index.html" target="_blank">
+          <div
+            class="icon"
+            style="background-image: url('icon/sketchbook.png')"
+          ></div>
+        </a>
+
+        <a href="https://web.whatsapp.com/" target="_blank">
+          <div
+            class="icon"
+            style="background-image: url('icon/whatsapp.png')"
+          ></div>
+        </a>
+        <div
+          class="icon"
+          style="background-image: url('icon/system.png')"
+          onclick="openFullscreen()"
+        ></div>
+      </div>
+    </div>
+
+    <div class="appFrame" id="theApp">
+      <div class="bar">
+        <div class="control">
+          <div
+            class="red"
+            style="background-color: red"
+            onclick="closeApp()"
+          ></div>
+          <div
+            class="yellow"
+            style="background-color: yellow"
+            onclick="closeApp()"
+          ></div>
+          <div
+            class="green"
+            style="background-color: lime"
+            onclick="appFullScreen()"
+          ></div>
+        </div>
+        <div class="appName">Settings</div>
+      </div>
+      <iframe
+        src="app/settings.html"
+        frameborder="0"
+        id="appWindowIframe"
+      ></iframe>
+    </div>
+  </body>
+</html>

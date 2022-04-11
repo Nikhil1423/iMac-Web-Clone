@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/setting.css">
+	<link rel="stylesheet" href="setting.css">
+    <title>Setting</title>
+</head>
+<body>
+    <div class="window nocm window--preferences window--minimized" data-window="preferences"
+			style="min-width:750px;height:530px;width:750px;min-height:530px;top:20%;left:35%;max-width:750px;max-height:530px;" handler="extended" resizable="false">
+			<div class="window__handler">
+				<div class="window__title">System Preferences</div>
+				<div class="window__controls">
+					<a class="window__close"></a>
+					<a class="window__minimize"></a>
+					<a class="window__maximize disabled"></a>
+				</div>
+				<div class="window__actions">
+					<a class="nav prev disabled"></a>
+					<a class="nav next disabled"></a>
+					<a class="nav home"></a>
+					<a class="search"><i></i><input type="text" class="filesysSearch" placeholder="Search" spellcheck="false" autocomplete="off"/></a>
+				</div>
+			</div>
+			<div class="window__body">
+				<div class="window__main">
+					<div class="list">
+						<table>
+							<tr>
+								<td>Desktop and Screensaver:</td>
+								<td><label class="item canCheck"><input type="checkbox" class="sDynamicWallpaper" checked/>Dynamic
+										Wallpaper<span class="description">Wallpaper will change to night mode from 18:00 to 7:00.<br>By default it
+											will display night mode wallpaper.</span></label></td>
+							</tr>
+							<tr>
+								<td>Taskar:</td>
+								<td><label class="item canCheck"><input type="checkbox" class="sAnimateAppsIconOnOpen" checked/>Bounce app
+										icons<span class="description">When the app opens the app icon in the taskbar will bounce.</span></label></td>
+							</tr>
+							<tr>
+								<td>Time:</td>
+								<td><label class="item canCheck"><input type="checkbox" class="sTimeShowSeconds" />Show seconds</label><label
+										class="item canCheck"><input type="checkbox" class="sTimeShowDate" checked/>Show date<span
+											class="description">Day and month.</span></label></td>
+							</tr>
+							<tr>
+								<td>Battery:</td>
+								<td><label class="item canCheck"><input type="checkbox" class="sPowerShowPercentage" checked/>Show battery
+										percentage<span class="description">Remaining battery percentage will be displayed.</span></label></td>
+							</tr>
+							<tr>
+								<td>Experimental:</td>
+								<td><label class="enableTestPanel"><button type="button">Toggle Dev Panel</button></label><br><br><label
+										class="clickable" data-trigger="window" data-window="terminal"><button type="button">Open terminal window</button></label><br><br><label
+										class="testCreateW"><button type="button">CreateWindow</button></label><br><br><label
+										class="testCreateWi"><button type="button">CreateWindow (with image)</button></label></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="window window--files window--finder window--minimized" data-windowBackdrop="true" data-window="files"
+			style="min-width:600px;width:720px;min-height:390px;height:480px;top:200px;left:600px;" title="dynamic">
+			<div class="window__handler">
+				<div class="window__title">📁Documents</div>
+				<div class="window__controls">
+					<a class="window__close"></a>
+					<a class="window__minimize"></a>
+					<a class="window__maximize"></a>
+				</div>
+				<div class="window__actions">
+					<a class="nav prev disabled"></a>
+					<a class="nav next disabled"></a>
+
+					<a class="search"><i></i><input type="text" class="filesysSearch" placeholder="Search" spellcheck="false" autocomplete="off"/></a>
+				</div>
+			</div>
+			<div class="window__body">
+				<div class="sidebar" data-display="items">
+					<div class="title" data-group="favorites">Favorites</div>
+					<div class="item" data-item="recents">Recents</div>
+					<div class="item" data-item="downloads">Downloads</div>
+					<div class="item active" data-item="documents">Documents</div>
+					<div class="item" data-item="desktop">Desktop</div>
+					<div class="item" data-item="images">Images</div>
+					<div class="item" data-item="music">Music</div>
+					<div class="item" data-item="videos">Videos</div>
+					<div class="item" data-item="apps">Apps</div>
+				</div>
+				<div class="window__main hasSideBar filesys" data-visualization="icons">
+					<!--<div class="folder" data-tag="" data-name="Codepen" data-type="f" data-date="10 oct 2019" data-bytes="165.762"><div class="content"></div></div><div class="folder" data-tag="blue" data-name="University" data-type="f" data-date="3 sep 2018" data-bytes="2.745.693"><div class="content"></div></div><div class="folder" data-tag="yellow" data-name="Future backgrounds" data-type="f" data-date="2 aug 2017" data-bytes="8.374.290"><div class="content"></div></div><div class="file" data-tag="" data-name="IMG_0405.jpg" data-type="img" data-date="3 nov 2018" data-bytes="6.395.751"><div class="content" style="background-image:url(https://bit.ly/33HGY7m);"></div></div><div class="file" data-tag="" data-name="IMG_0406.jpg" data-type="img" data-date="3 nov 2018" data-bytes="4.936.117"><div class="content" style="background-image:url(https://bit.ly/2Q8IhrY);"></div></div><div class="file" data-tag="" data-name="Exercise 2 - Economy (T3).xlsx" data-type="xlsx" data-icon="excel" data-date="21 may 2018" data-bytes="23.924"><div class="content"></div></div>-->
+				</div>
+			</div>
+		</div>
+
+		<div class="window window--calendar window--minimized" data-window="calendar"
+			style="min-width:600px;width:720px;min-height:390px;height:480px;top:200px;left:600px;">
+			<div class="window__handler">
+				<div class="window__controls">
+					<a class="window__close"></a>
+					<a class="window__minimize"></a>
+					<a class="window__maximize"></a>
+				</div>
+			</div>
+			<div class="window__body">
+				<div class="calendar"></div>
+			</div>
+		</div>
+
+		<div class="window window--safari window--minimized" data-windowBackdrop="true"
+			data-window="safari" style="min-width:600px;width:1100px;min-height:390px;height:700px;top:80px;left:400px;">
+			<div class="window__handler">
+				<div class="window__controls">
+					<a class="window__close"></a>
+					<a class="window__minimize"></a>
+					<a class="window__maximize"></a>
+				</div>
+				<input class="browse" type="text" placeholder="Browse or type a web" value="unsplash.com" />
+				<ul class="tabs">
+					<li class="active" data-tabId="index.html"><a class="close"></a>index.html</li>
+					<li data-tabId="favorites"><a class="close"></a>Favorites</li>
+					<li class="new sAppSafariNewTab"></li>
+				</ul>
+			</div>
+			<div class="window__body">
+				<div class="content visible" data-tabId="index.html">
+					<h1>Sample text</h1>
+				</div>
+				<div class="content transparent" data-tabId="favorites">
+					<div style="text-align:center;">
+						<div
+							style="position:relative;display:inline-block;margin:50px 30px;width:65px;height:65px;border-radius:2px;background:rgba(255,255,255,.1);box-shadow:0 0 0 15px rgba(255,255,255,.1),0 5px 10px 15px rgba(0,0,0,.1);background-position:center center;background-size:contain;background-repeat:no-repeat;background-image:url('https://bit.ly/2Ikf4Fa');line-height:200px;font-size:85%;">
+							Youtube</div>
+						<div
+							style="position:relative;display:inline-block;margin:50px 30px;width:65px;height:65px;border-radius:2px;background:rgba(255,255,255,.1);box-shadow:0 0 0 15px rgba(255,255,255,.1),0 5px 10px 15px rgba(0,0,0,.1);background-position:center center;background-size:contain;background-repeat:no-repeat;background-image:url('http://bit.ly/2uW0914');line-height:200px;font-size:85%;">
+							Netflix</div>
+						<div
+							style="position:relative;display:inline-block;margin:50px 30px;width:65px;height:65px;border-radius:2px;background:rgba(255,255,255,.1);box-shadow:0 0 0 15px rgba(255,255,255,.1),0 5px 10px 15px rgba(0,0,0,.1);background-position:center center;background-size:contain;background-repeat:no-repeat;background-image:url('http://bit.ly/2wvkhY1');line-height:200px;font-size:85%;">
+							Drive</div>
+						<div
+							style="position:relative;display:inline-block;margin:50px 30px;width:65px;height:65px;border-radius:2px;background:rgba(255,255,255,.1);box-shadow:0 0 0 15px rgba(255,255,255,.1),0 5px 10px 15px rgba(0,0,0,.1);background-position:center center;background-size:contain;background-repeat:no-repeat;background-image:url('http://bit.ly/2To3f7n');line-height:200px;font-size:85%;">
+							Codepen</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="window window--terminal window--minimized" data-window="terminal"
+			style="width:600px;height:400px;top:16%;left:50%;">
+			<div class="window__handler">
+				<div class="window__title">Terminal</div>
+				<div class="window__controls">
+					<a class="window__close"></a>
+					<a class="window__minimize"></a>
+					<a class="window__maximize"></a>
+				</div>
+			</div>
+			<div class="window__body">
+				<div class="window__main anim sAppTerminal">
+					<div id="outputs" class="outputs"></div>
+					<div for="cmd-input" class="console-prompt-box">
+						<input id="input" type="text" class='console-input' placeholder=">" spellcheck="false" autocomplete="off">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="context" hidden></div>
+</body>
+</body>
+</html>
